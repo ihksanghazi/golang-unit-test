@@ -1,19 +1,24 @@
 package helper
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestHelloWorld(t *testing.T) {
 	result := HelloWorld("sandy")
 	if result != "Hello sandy" {
 		// unit test failed
-		panic("Result is not OK")
+		t.Fail()
 	}
+	fmt.Println("TestHelloWorld Done")
 }
 
 func TestHelloWorldIhksan(t *testing.T) {
 	result := HelloWorld("ihksan")
 	if result != "Hello ihksan" {
 		// unit test failed
-		panic("Result is not OK")
+		t.FailNow()
 	}
+	fmt.Println("TestHelloWorldIhksan Done")
 }
