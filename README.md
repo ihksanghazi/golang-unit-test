@@ -18,3 +18,7 @@ Menjalankan unit Test
 - go test -v (run testing dengan menampilkan nama function nya)
 - go test -v -run namafunction (untuk menjalankan testing tertentu)
 - go test ./... (run semua test walaupun di luar package)
+
+Skip Test
+
+- untuk membatalkan eksekusi unit tes kita bisa menggunakan function skip()
